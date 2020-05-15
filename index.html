@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign-in form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="ba-container">
+        <form action="#" method="post" class="ba-singin-form">
+          <div class="ba-singin-form__header">
+            <a href="#" class="ba-singin-form__header--active">Sign in</a>
+            <a href="#">Join us</a>
+          </div>
+      	 <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+				id="username"
+				minlength="3"
+				pattern="^[a-zA-Z]+$"
+            required
+				class="ba-full-width"/>
+			<label for="password">Password</label>
+         <input
+            required
+            type="password"
+            name="password"
+				id="password"
+				minlength="8"
+            class="ba-full-width"/>
+          <div class="ba-keep-me-signin">
+            <input
+              type="checkbox"
+              name="login"
+              id="login"
+              value="yes"
+              checked/>
+            <label for="login">Keep me signed in</label>
+			 </div>
+			 <div class="ba-singin-form__footer">
+            <button type="submit" class="ba-full-width">
+              Sign in
+            </button>
+            <div class="ba-singin-form__footer--link">
+              <a href="#">Forgot password</a>
+              <a href="#">Create an account</a>
+            </div>
+          </div>
+        </form>
+      </div>
+     </main>
+  </body>
+</html>
